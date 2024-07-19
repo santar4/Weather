@@ -1,24 +1,22 @@
 # Weather
 ### Створити віртуальне середовище 
 
-py -m venv .venv
+`py -m venv .venv`
 
-.venv\Scripts\activate
+`.venv\Scripts\activate`
 
 
 ### Встановити залежності
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### Ініціювати базу данних
-py init_db.py
-
-
-## Шаблон для бдуь якого доданку на Flask
+`py init_db.py`
 
 ### Необхідні бібліотеки:
 -  Flask
 -  Flask-SQLAlchemy
 -  Flask-WTF
 
-sh 
+```sh 
 pip install flask flask-sqlalchemy flask-wtf python-dotenv
+```
