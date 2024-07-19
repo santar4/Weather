@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Вхід</h2>
+    <form method="post" action="{{ url_for('login') }}" class="form-signin">
+        {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+            {{ form.nickname.label(class="form-label") }}
+            {{ form.nickname(class="form-control") }}
+        </div>
+
+
+        <div class="mb-3">
+            {{ form.password.label(class="form-label") }}
+            {{ form.password(class="form-control") }}
+        </div>
+
+        <div class="mb-3 text-center">
+            {{ form.submit(class="btn btn-primary btn-block") }}
+        </div>
+
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                {% for field, errors in form.errors.items() %}
+                    {% for error in errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

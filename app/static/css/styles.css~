@@ -1,0 +1,103 @@
+/* General styles for the body */
+body {
+
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+div {
+    background-color: #E0FFFF;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 17px;
+    text-align: center;
+}
+
+/* Link styles */
+a {
+    display: inline-block;
+    background-color:#87CEFA;
+    color: white;
+    padding:  20px;
+    text-decoration: none;
+    border-radius: 100px;
+    margin-bottom: 17px;
+}
+
+a:hover {
+    background-color: #87CEEB
+}
+
+/* Image styles */
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    border-radius: 100px;
+    border: 1px #eee solid;
+    background: #E6E6FA;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 2em;
+}
+
+    .weather-card {
+        padding: 0.1px;
+    }
+
+    .weather-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+    .temp {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .unit {
+        font-size: 0.5em;
+        vertical-align: super;
+    }
+    .description {
+        font-size: 1.5em;
+        text-transform: capitalize;
+    }
+    .details {
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+    .details p {
+        margin: 10px 0;
+    }
+nav {
+    border-radius: 50px;
+}
+
+#resours {
+    margin: 10px;
+    color: white;
+    display: flex;
+
+}
+
+
+#news{
+    color: purple;
+
+}
+
+
+
+
+
+
+
+

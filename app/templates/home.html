@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to my weather forecast {% endblock %}</h1>
+<body>
+
+<section class="resources" id="resours">
+    <h2>Корисні Ресурси Про Погоду</h2>
+    <ul>
+        <li><a href="https://www.weather.com">Weather.com</a></li>
+        <li><a href="https://www.accuweather.com">AccuWeather</a></li>
+        <li><a href="https://www.metoffice.gov.uk">Met Office</a></li>
+    </ul>
+</section>
+<section class="news-updates" id="news">
+    <h2>Latest Weather Updates</h2>
+    <div class="update">
+        <h3>New Weather Patterns in Your Area</h3>
+        <p>Read about the latest weather patterns affecting your region.</p>
+        <a href="https://edition.cnn.com/weather" class="btn btn-secondary">Read More</a>
+    </div>
+
+</section>
+</body>
+
+
+
+
+
+{% endblock %}
